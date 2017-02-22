@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "always show explore button on github",
+	"version": "0.0.1",
+	"description": "always show explore button in nav bar on github",
+	"content_scripts": [
+		{
+			"matches": ["*://github.com/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
